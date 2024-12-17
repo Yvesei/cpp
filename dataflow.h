@@ -1,7 +1,5 @@
 #ifndef DATAFLOW_H
 #define DATAFLOW_H
-
-
 #include <iostream>
 #include <string>
 using namespace std;
@@ -16,6 +14,7 @@ class dataflow{
         void controleIntegrite();
         string getData();
         string getSignature();
+        bool getDemandeProtection();
 };
 
 #endif

@@ -4,7 +4,7 @@
 using namespace std;
 composant::composant() : protege(false), calculSignaturePossible(false) {}
 
-
+composant::composant(int a) : id(a), protege(false), calculSignaturePossible(false) {}
 
 void composant::addTraitement(traitement* tr) {
     traitements.push_back(tr);
@@ -38,4 +38,8 @@ void composant::setCalculSignaturePossible(bool status) {
 
 bool composant::isCalculSignaturePossible() const {
     return calculSignaturePossible;
+}
+
+int composant::getId(){
+    return this->id;
 }

@@ -49,4 +49,8 @@ string dataflow::getData() {
 string dataflow::getSignature() {
     return this->signature;
 }
+bool dataflow::getDemandeProtection() {
+    return this->demande_protection;
+}
+
 
